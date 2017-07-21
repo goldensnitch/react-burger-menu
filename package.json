@@ -16,8 +16,16 @@
     "browserify-optional": "^1.0.0",
     "classnames": "^2.1.1",
     "eve": "~0.4.2",
+    "fixed-data-table": "^0.6.4",
+    "fixed-data-table-2": "^0.7.17",
+    "jquery": "^3.2.1",
     "prop-types": "^15.5.8",
-    "snapsvg-cjs": "0.0.4"
+    "react-bootstrap-table": "^3.4.4",
+    "react-modal": "^2.2.2",
+    "react-simple-flex-grid": "^1.1.0",
+    "reactable": "^0.14.1",
+    "snapsvg-cjs": "0.0.4",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",

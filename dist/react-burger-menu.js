@@ -1272,7 +1272,7 @@ var styles = {
             return {
                 height: '100%',
                 boxSizing: 'border-box',
-                overflow: 'auto'
+                overflow: 'hidden'
             };
         },
         itemList: function itemList() {

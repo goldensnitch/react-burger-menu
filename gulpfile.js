@@ -41,6 +41,7 @@ var taskConfig = {
       'index.html',
       '.gitignore',
       'normalize.css',
+      'grid.css',
       'fonts/**/*'
     ],
     scripts: [

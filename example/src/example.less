@@ -29,15 +29,384 @@ a {
 
 main {
   height: 100%;
-  padding: 3em 2em;
+  padding: 1em 2em 1em 2em;
   text-align: center;
   background: #b4bad2;
-  overflow: scroll;
+  overflow-y: auto;
+}
+
+.app-header {
+  h1 {
+    margin-top: 0;
+    margin-bottom: .5em;
+  }
 }
 
 h1 {
   font-weight: 800;
   font-size: 3.75em;
+}
+
+.login {
+  h1 {
+    font-weight: 500;
+  }
+}
+
+.table {
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+}
+
+input[type=radio]:checked ~ .check {
+  border: px solid #0DFF92;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+.post-filter {
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 4px;
+  span {
+    padding-right: 15px;
+  }
+  label {
+    padding-left: 5px;
+  }
+}
+
+.page-stats {
+  h1, h2, p {
+    margin: 0;
+  }
+}
+.page-browser {
+  height: 500px;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #232f3e;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #d0d1d5;
+  border-left: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.page-browser__page-list {
+  overflow: auto;
+  width: 100%;
+  height: 91.5%;
+  background: #e9ebee;
+  border-right: 1px solid #dddfe2;
+}
+
+.page-browser__post-list {
+  overflow: auto;
+  width: 100%;
+  height: 91.5%;
+  background: #e9ebee;
+  padding: 20px;
+}
+
+.page-browser__post-list-unit {
+  background: white;
+  padding: 1px;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  margin-bottom: 15px;
+
+  .header {
+    padding: 20px;
+    p {
+      text-align: left;
+      font-size: 20px;
+      margin: 0;
+      color: #404040;
+    }
+    img {
+      max-height: 300px;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.main {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.meta-data {
+  text-align: left;
+  padding-left: 8px;
+  .date {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    color: #404040;
+  }
+  .views {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color: #848282;
+    font-size: 15px;
+  }
+  .published {
+    margin: 0;
+    color: #848282;
+    font-size: 15px;
+  }
+  .underline {
+    border: 1px solid #e8e8e8;
+    width: 99%;
+    margin-top: 15px;
+  }
+  i {
+    color: #848282;
+    padding-left: 10px;
+  }
+}
+
+.page-browser__page-list-unit {
+  text-align: left;
+  border-bottom: 1px solid #dddfe2;
+  padding: 10px;
+      background: white;
+  p {
+    margin: 0;
+  }
+  .header {
+    font-size: 25px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  img {
+    float: left;
+    height: 50px;
+    padding-right: 10px;
+  }
+}
+
+.post-bar {
+  width: 100%;
+  background: #232f3e;
+  padding: 5px 0;
+  border-bottom: 1px solid #dddfe2;
+  height: 41.5px;
+}
+
+.search-bar {
+  border-right: 1px solid #dddfe2;
+  input {
+    outline: none;
+    margin-top: 4px;
+    padding-left: 10px;
+    border: transparent;
+    border-radius: 10px;
+  }
+  i {
+    margin-right: 10px;
+    color: white;
+  }
+}
+
+.textarea {
+  padding: 30px;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+
+  textarea {
+    padding: 0;
+    border: none;
+    resize: none;
+    overflow: auto;
+    outline: none;
+  }
+}
+
+.modal-header {
+  margin: 20px;
+  h2 {
+    position: fixed;
+    color: #656565;
+    top: 0;
+    left: 30%;
+  }
+  a {
+    margin-left: 96%;
+  }
+}
+
+section.button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 48px;
+  font-family: "Bitter",serif;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+button:focus {
+  outline: none
+}
+
+.switch-text {
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: black;
+    position: fixed;
+    bottom: 22px;
+  }
+}
+
+.left {
+  p {
+    right: 220px;
+  }
+}
+.right {
+  p {
+    right: 105px;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  bottom: 18px;
+  right: 170px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button-shift {
+  button {
+    margin-left: 82.5%;
+  }
+}
+
+.modal-button {
+  margin: 0 0 10px 0;
+  button {
+    display: inline-block;
+    padding: 5px 20px;
+    line-height: 1.8;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 3px;
+  }
+
+  button:focus {
+    outline: none
+  }
+  button {
+    color: #fff;
+    background-color: #4267b2;
+    border: none;
+  }
+  button:hover, button.hover {
+    background-color: #2e4a82;
+  }
+  button:active, button.active {
+    background-color: #2e4a82;
+  }
+}
+
+.styled-button {
+  margin: 0 0 1px 0;
+  text-align: right;
+  padding-right: 30px;
+  button {
+    display: inline-block;
+    padding: 1px 15px;
+    line-height: 1.8;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 3px;
+  }
+
+  button:focus {
+    outline: none
+  }
+  button {
+    color: #fff;
+    background-color: #febd69;
+    border: none;
+  }
+  button:hover, button.hover {
+    background-color: #d29a51;
+  }
+  button:active, button.active {
+    background-color: #d29a51;
+  }
 }
 
 .description {
@@ -69,8 +438,8 @@ h1 {
     cursor: pointer;
 
     &.current-demo {
-      background: #c94e50;
-      color: #fffce1;
+      background: #3B5998;
+      color: white;
     }
   }
 }
